@@ -159,7 +159,7 @@ psql -U postgres
 
     7. /templates
             |--- /emaillist
-                      |--- form.html
+                      |--- form.html    => {% csrf_token %}
                       |--- index.html
         /templates/emaillist에 html 추가
 
