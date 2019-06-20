@@ -126,7 +126,6 @@ psql -U postgres
 
     4. Model 정의
         4-1. /emaillist/models.py 열기
-                (vo와 비슷한것)
                 models.Model를 상속받는 EmailList 클래스를 만들어서 클래스 변수를 선언
                     => 알아서 DB에 Table을 생성해주기 위해서 : ORM 이라고 함
                 주 키는 id로 models에서 자동으로 만들어줌
@@ -148,6 +147,7 @@ psql -U postgres
         urlpatterns = [
             path('emaillist/', emaillist_views.index),
             path('emaillist/form', emaillist_views.form),
+            path('emaillist/add', emaillist_views.add),
             ...
             ...
 
@@ -162,3 +162,4 @@ psql -U postgres
                       |--- form.html
                       |--- index.html
         /templates/emaillist에 html 추가
+
