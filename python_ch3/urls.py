@@ -25,5 +25,6 @@ urlpatterns = [
     path('emaillist/add', emaillist_views.add),
 
     path('helloworld/', helloworld_views.hello),
+    path('helloworld/hello2/<int:id>', helloworld_views.hello2),
     path('admin/', admin.site.urls),
 ]
